@@ -94,6 +94,7 @@ AND slashes must be '/' slashes */
 .bod #list{
   font-size: 20px;
   text-align: left;
+  margin-left: 140px;
 }
 
 .bod #title  {
