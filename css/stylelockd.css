@@ -82,7 +82,7 @@ AND slashes must be '/' slashes */
   margin: 0 auto;
   margin-bottom: 20px;
   box-shadow: 0 0 4px 4px #d3d3d3;
-  background-image: url("../img/bloo.jpg");
+  background-image: url(".../img/bluebackground.jpg");
   /* Set a specific height */
   min-height: 555px;
   background-attachment: fixed;
