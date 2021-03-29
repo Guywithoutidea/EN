@@ -9,7 +9,6 @@ body {
 
 
 /* parallax background- needs image to be specified in css
-
 AND slashes must be '/' slashes */
 
 
@@ -39,7 +38,7 @@ AND slashes must be '/' slashes */
   margin-left: 35px;
   margin-top: 80px;
   box-shadow: 0 0 4px 4px #d3d3d3;
-  background-image: url(".../img/bluebackground.jpg");
+  background-image: url("../img/bloo.jpg");
   /* Set a specific height */
   min-height: 400px;
   background-attachment: fixed;
@@ -71,6 +70,7 @@ AND slashes must be '/' slashes */
 
 .bod  {
   text-align: center;
+  background-color: #3e6da3;
   color: #fff;
   font-family: "Calibri Light", monospace;
   padding: 10px;
@@ -81,17 +81,16 @@ AND slashes must be '/' slashes */
   margin: 0 auto;
   margin-bottom: 20px;
   box-shadow: 0 0 4px 4px #d3d3d3;
-  background-image: url("../img/bluebackground.jpg");
+  background-image: url("../img/bloo.jpg");
   /* Set a specific height */
   min-height: 555px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
 }
 
-.bod li{
+.bod #list{
   font-size: 20px;
   text-align: left;
   margin-left: 140px;
