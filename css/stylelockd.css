@@ -90,7 +90,7 @@ AND slashes must be '/' slashes */
   background-size: cover;
 }
 
-.bod #list{
+.bod li{
   font-size: 20px;
   text-align: left;
   margin-left: 140px;
