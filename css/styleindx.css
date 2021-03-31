@@ -1,3 +1,10 @@
+:root{
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-family: "Calibri Light", monospace;
@@ -5,12 +12,38 @@ body {
   padding-top: 0px;
   padding-bottom: 20px;
   margin: 0px;
+  background: linear-gradient(to bottom, var(--grad1), var(--grad2));
 }
 
+.asi {
+  position: fixed;
+  float: left;
+  text-align: center;
+  /*background-color: #3e6da3;*/
+  color: #fff;
+  font-family: "Calibri Light", monospace;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 35px;
+  width: 150px;
+  height: 400px;
+  margin: 0 auto;
+  margin-left: 35px;
+  margin-top: 80px;
+  box-shadow: 0 0 4px 4px #d3d3d3;
+  background-image: url(../img/bloo.jpg);
+  /* Set a specific height */
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-/* parallax background- needs image to be specified in css
-
-AND slashes must be '/' slashes */
+.asi a:hover  {
+  color: #add8e6;
+  font-weight: bolder;
+}
 
 .one  {
   float: left;
@@ -48,7 +81,7 @@ video {
 
 /*Default body- no float*/
 
-.bod  {
+.bodwhite  {
   text-align: center;
   background-color: #e3170a;
   color: #fff;
@@ -69,7 +102,29 @@ video {
   background-size: contain;
 }
 
-.bod li{
+.bodbloo  {
+  text-align: center;
+  background-color: #3e6da3;
+  color: #fff;
+  font-family: "Calibri Light", monospace;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 35px;
+  width: 1030px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px 4px #d3d3d3;
+  background-image: url("../img/bloo.jpg");
+  /* Set a specific height */
+  min-height: 555px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li {
   font-size: 20px;
   text-align: left;
 }
@@ -145,7 +200,7 @@ video {
   font-size: 20px;
 }
 
-.topnav a.return {
+topnav a.returnred {
   float: right;
   background-color: #e3170a;
   padding: 20px;
@@ -158,9 +213,21 @@ video {
   font-weight: bolder;
 }
 
+topnav a.returnbloo {
+  float: right;
+  background-color: #e3170a;
+  padding: 20px;
+  color: #fff;
+  margin: 0 auto;
+  height: 80px;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+
 /* Change the color of links on hover- white on black */
 .topnav a:hover {
-  color: #e3170a;
+  color: white;
   background-color: inherit;
   font-weight: bolder;
 }
