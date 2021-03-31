@@ -7,16 +7,14 @@
     <meta name"viewport" comtent="width=device-width, initial-scale=1.0">
     <title> Elliott Nicholson </title>
     <link rel="icon" href="img\icond.png">
-    <link rel="stylesheet" href="css\stylelockd.css" type="text/css">
-    <script src="js\lockdown.js"></script>
-    <div class="topnav" id="intro">
-      <a href=index.html class="home">Elliott Nicholson</a>
-    </div>
+    <link rel="stylesheet" href="css\stylelockd.css" type="text/css">    
 </head>
 
   <body>
-
-    <aside class="asi">
+      <div class="topnav" id="intro">
+      <a href=index.html class="home">Elliott Nicholson</a>
+      </div>
+      <aside class="asi">
       <p> Navigation Links: </p>
       <a href="lockd.html#intro">Title</a>
       <br>
@@ -29,12 +27,12 @@
 
     <!--this id is for the aside nav bar-->
     <div class="bod">
-      <p id="title">Elliott's Wonderful World Of Lockdown!</p>
+      <p class="title">Elliott's Wonderful World Of Lockdown!</p>
       <p>(I mean, it wasn't that bad)</p>
     </div>
 
     <div class="bod" id="achieved">
-        <p id="title">What worked for me<p>
+        <p class="title">What worked for me<p>
         <p>There were a few good subjects during this year's lockdowns (not a single one in particular):</p>
         <ul>
           <li>PE - we did nothing</li>
@@ -46,7 +44,7 @@
         <ul>
       </div>
       <div class="bod" id="didnt">
-        <p id="title">What didn't work for me</p>
+        <p class="title">What didn't work for me</p>
         <p>There were quite a few more subjects that did not go so well:</p>
         <ul>
           <li id="list">Health - my teacher seemed to be under the impression we could do group work</li>
@@ -56,9 +54,27 @@
         </ul>
       </div>
       <div class="bod" id="goodteacher">
-        <p id="title">The best teacher in lockdown</p>
+        <p class="title">The best teacher in lockdown</p>
         <p>Without naming anyone, I definetly enjoyed a certain teacher's class for it's organisation. Organising a class online less than 48 hours after a lockdown is certainly no easy feat. I can safely say not all teachers were up to the task. This teacher was able to give us new information just as well, if not better than in traditional classwork. I am (at the time of writing) about to take an assesment in this class, and feel that (despite the lockdown) I am perfectly ready.</p>
       </div>
+      <div class="bod">
+        <p id="end"></p>
+        <button onclick="gradient_set('white','black')">click here</button>
+            
+      <script>
+
+        var root = document.querySelector(':root');
+
+        function currentvaluecolor_get() {
+        var rootstyle = getComputedStyle(root);
+        }
+        function gradient_set(color1,color2) {
+          root.style.setProperty('--grad1', color1)
+          root.style.setProperty('--grad2', color2)
+          document.getElementById("end").innerHTML = "After doing this, I realised Javascript has almost unlimited possibilities! (at the expense of pain). Also you will need to reload the page, as I did not have time to turn this into a toggleable function... (may do so at a future date)"
+        }
+
+        </script>
 
   </body>
 </html>
