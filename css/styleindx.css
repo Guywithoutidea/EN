@@ -12,23 +12,12 @@ body {
 
 AND slashes must be '/' slashes */
 
-
-
-/*Highlight box around image icons*/
-
-#frame {
-  box-shadow: 0 0 4px 4px #d3d3d3;
-  float: left;
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
-
-#one  {
+.one  {
   float: left;
   margin: 30px;
 }
 
-#two  {
+.two  {
   float: right;
   margin: 30px;
 }
@@ -80,12 +69,12 @@ video {
   background-size: contain;
 }
 
-.bod #list{
+.bod li{
   font-size: 20px;
   text-align: left;
 }
 
-.bod #title  {
+.title  {
   font-size: 60px;
   text-align: center;
   font-family: "Julius Sans One", monospace;
