@@ -1,6 +1,20 @@
+:root{
+}
+
 html{
   scroll-behavior: smooth;
 }
+
+
+.mover {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+}
+
 
 body {
   text-align: center;
@@ -9,28 +23,14 @@ body {
   padding-top: 0px;
   padding-bottom: 20px;
   margin: 0px;
+  background: linear-gradient(to bottom, var(--grad1), var(--grad2));
 }
-
-
-/* parallax background- needs image to be specified in css
-AND slashes must be '/' slashes */
-
-
-
-/*Highlight box around image icons*/
-
-#frame {
-  box-shadow: 0 0 4px 4px black;
-}
-
-/*Title*/
-
 
 .asi {
   position: fixed;
   float: left;
   text-align: center;
-  background-color: #3e6da3;
+  /*background-color: #3e6da3;*/
   color: #fff;
   font-family: "Calibri Light", monospace;
   padding: 10px;
@@ -42,7 +42,7 @@ AND slashes must be '/' slashes */
   margin-left: 35px;
   margin-top: 80px;
   box-shadow: 0 0 4px 4px #d3d3d3;
-  background-image: url("../img/bloo.jpg");
+  background-image: url(../img/bloo.jpg);
   /* Set a specific height */
   min-height: 400px;
   background-attachment: fixed;
@@ -94,19 +94,23 @@ AND slashes must be '/' slashes */
   background-size: cover;
 }
 
-.bod #list{
+.bod li{
   font-size: 20px;
   text-align: left;
   margin-left: 140px;
 }
 
-.bod #title  {
+.title  {
   font-size: 60px;
   text-align: center;
   font-family: "Julius Sans One", monospace;
   font-weight: bolder;
   line-height: 65px;
   padding: 10px;
+}
+
+button {
+  margin: 200px auto;
 }
 
 .foot  {
@@ -202,3 +206,4 @@ AND slashes must be '/' slashes */
   text-decoration: none;
   color: #fff;
 }
+
