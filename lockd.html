@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-
-<html lang="">
-
 <head>
     <meta charset="utf-8">
     <meta name"viewport" comtent="width=device-width, initial-scale=1.0">
     <title> Elliott Nicholson </title>
-    <link rel="icon" href="img\icond.png">
-    <link rel="stylesheet" href="css\stylelockd.css" type="text/css">    
+    <link rel="icon" href="img/icond.png">
+    <link rel="stylesheet" href="css/styleindx.css" type="text/css">
+
 </head>
 
   <body>
-      <div class="topnav" id="intro">
-      <a href=index.html class="home">Elliott Nicholson</a>
-      </div>
-      <aside class="asi">
+    <div class="topnav" id="intro">
+      <a href=index.html class="returnbloo">Elliott Nicholson</a>
+      <a href="compsci.html">My Hobby</a>
+      <a href="lockd.html">Lockdown</a>
+    </div>
+
+    <aside class="asi">
       <p> Navigation Links: </p>
       <a href="lockd.html#intro">Title</a>
       <br>
@@ -26,12 +26,12 @@
     </aside>
 
     <!--this id is for the aside nav bar-->
-    <div class="bod">
+    <div class="bodbloo">
       <p class="title">Elliott's Wonderful World Of Lockdown!</p>
       <p>(I mean, it wasn't that bad)</p>
     </div>
 
-    <div class="bod" id="achieved">
+    <div class="bodbloo" id="achieved">
         <p class="title">What worked for me<p>
         <p>There were a few good subjects during this year's lockdowns (not a single one in particular):</p>
         <ul>
@@ -43,7 +43,7 @@
           <li>Languages - the way our classes were organised, they seemed to run themselves</li>
         <ul>
       </div>
-      <div class="bod" id="didnt">
+      <div class="bodbloo" id="didnt">
         <p class="title">What didn't work for me</p>
         <p>There were quite a few more subjects that did not go so well:</p>
         <ul>
@@ -53,15 +53,15 @@
           <li id="list">Enterprise - not really good nor bad</li>
         </ul>
       </div>
-      <div class="bod" id="goodteacher">
+      <div class="bodbloo" id="goodteacher">
         <p class="title">The best teacher in lockdown</p>
         <p>Without naming anyone, I definetly enjoyed a certain teacher's class for it's organisation. Organising a class online less than 48 hours after a lockdown is certainly no easy feat. I can safely say not all teachers were up to the task. This teacher was able to give us new information just as well, if not better than in traditional classwork. I am (at the time of writing) about to take an assesment in this class, and feel that (despite the lockdown) I am perfectly ready.</p>
       </div>
-      <div class="bod">
+      <div class="bodbloo" style="height: auto;">
+        <button onclick="gradient_set('white','black')"><a href="lockd.html#end">click here</a></button>
         <p id="end"></p>
-        <button onclick="gradient_set('white','black')">click here</button>
-            
-      <script>
+      </div>
+        <script>
 
         var root = document.querySelector(':root');
 
@@ -71,10 +71,9 @@
         function gradient_set(color1,color2) {
           root.style.setProperty('--grad1', color1)
           root.style.setProperty('--grad2', color2)
-          document.getElementById("end").innerHTML = "After doing this, I realised Javascript has almost unlimited possibilities! (at the expense of pain). Also you will need to reload the page, as I did not have time to turn this into a toggleable function... (may do so at a future date)"
+          document.getElementById("end").innerHTML = "After doing this, I realised Javascript has almost unlimited possibilities! (at the expense of pain). Also you will need to reload the page, as I did not have time to turn this into a toggleable function... (may do so at a future date). Update: I worked out how to do this, see bottom of the homepage."
         }
 
         </script>
-
   </body>
 </html>
